@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    text-decoration: none;
+}
+
+body{
+    background-color: #efefef;
+    font-family: 'Poppins', sans-serif;
+}
+.formulario{
+    background-color: #fff;
+    margin: auto;
+    margin-top: 100px;
+    width: 54%;
+    max-width: 400px;
+    padding: 75px;
+    border-radius: 10px;
+    text-align: center;
+}
+.titulo{
+    font-size: 30px;
+    width: 100%;
+    font-family: 'roboto', sans-serif;
+}
+.contenedor{
+    margin-top: 32px;
+    
+}
+.grupo{
+    padding-bottom: 40px;
+}
+.input{
+    width: 100%;
+    color:dimgray;
+    font-size: 16px;
+    padding: 10px 5px;
+    border: 0;
+    box-shadow: 0px 1px;
+    outline: 0;
+}
+.label{
+    cursor: pointer;
+}
+.boton{
+    cursor: pointer;
+    padding: 10px 30px;
+    background-color:black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+.terminos-condiciones{
+    color: dimgray;
+}
+.boton:hover{
+    background-color:#5D6D7E;
+}
+.input::placeholder{
+    letter-spacing: 2px;
+}

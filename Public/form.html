@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form  class="formulario" action="ecomerce.html" method="post">
+        <img src="logo-removebg-preview.png" width="200" height="90" alt="">
+        <h2 class="titulo">Iniciar sesión</h2>
+        <p class="parrafo">¿aun no tienes una cuenta? <a target="_blank" href="form.html" class="link">Crear cuenta aquí</a></p>
+        <div class="contenedor">
+            <div class="grupo">
+                <label for="name" class="label">Nombre:</label>
+                <input type="text" id="name" name="nombre" class="input" placeholder="Nombre" required>
+            </div>
+            <div class="grupo">
+                <label for="user" class="label">Usuario:</label>
+                <input type="text" id="user" name="usuario" class="input" placeholder="Usuario " required>
+            </div>
+            <div class="grupo">
+                <label for="password" class="label">Contraseña:</label>
+                <input type="password" id="password" name="contraseña" class="input" placeholder="Contraseña" required>
+            </div>
+            
+            <input type="submit" id="submit" onclick="Formulario();" class="boton" value="Entrar">
+        </div>
+    </form>
+</body>
+</html>
