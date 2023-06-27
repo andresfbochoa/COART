@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100;1,400&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ecomerce.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        
+        <img class="logo" src="logo.jpeg" width="175" height="75" alt="">
+
+        <ul class="nav">
+            <li><a href="#">inicio</a></li>
+            <li><a href="">categorias</a>
+              <ul>
+                <li><a href="">tabletas</a></li>
+                <li><a href="">colores</a></li>
+                <li><a href="">grafito</a></li>
+                <li><a href="markerslist.html">marcadores</a></li>
+                <li><a href="tintalist.html">tinta</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        
+    <div id="cart-icon" onclick="toggleCart()">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cart-count">0</span>
+    </div>
+
+    </header>
+
+    <div id="cart-overlay">
+        <div id="cart">
+          <h2>Carrito de Compras</h2>
+          <ul id="cart-items">
+            <!-- Los elementos del carrito se agregarán aquí dinámicamente -->
+          </ul>
+          <div id="cart-total">
+            <h3>Total: <span id="total-amount">$0</span></h3>
+            
+          </div>
+        </div>
+      </div>
+
+    <div id="product-list">
+        <div class="product">
+
+        </div>
+        <label>
+            <input type="checkbox">
+                <div class="flip-card product">
+                    <div class="front">
+                        <h4>pinceles recargables</h4>
+                        <img class="items" src="setpinceles.webp" width="250" height="210" alt="">
+                        <p>set de seis pinceles recargables para acuarelas</p>
+                    </div>
+                    <div class="back">
+                        <h4>pinceles recargables</h4>
+                        <a class="boton1" href="recargables.html">ver mas info.</a>
+                        <a class="boton2 add-to-cart" onclick="addToCart('Pinceles recargables', 10)" href="#">añadir al carrito</a>
+                    </div>
+                </div>
+        </label>
+    
+        <label>
+            <input type="checkbox">
+                <div class="flip-card">
+                    <div class="front">
+                        <h4>sketchbook</h4>
+                        <img class="items" src="sketchbook.webp" width="250" height="210" alt="">
+                        <p>cuaderno de bocetos con tapa dura y cierre elastico</p>
+                    </div>
+                    <div class="back">
+                        <h4>skecthbook</h4>
+                        <a class="boton1" href="skecthbook.html">ver mas info.</a>
+                        <a class="boton2 add-to-cart" onclick="addToCart('skecthbook', 10)" href="#">añadir al carrito</a>
+                        
+                    </div>
+                </div>
+        </label>
+    
+        <label>
+            <input type="checkbox">
+                <div class="flip-card">
+                    <div class="front">
+                        <h4>acuarelas</h4>
+                        <img class="items" src="acuarelas.webp" width="250" height="210" alt="">
+                        <p>acuarelas windsor and newton</p>
+                    </div>
+                    <div class="back">
+                        <h4>acuarelas</h4>
+                        <a class="boton1" href="acuarelas.html">ver mas info.</a>
+                        <a class="boton2 add-to-cart" onclick="addToCart('acuarelas', 10)" href="#">añadir al carrito</a>
+                    </div>
+                </div>
+        </label>
+    
+        <label>
+            <input type="checkbox">
+                <div class="flip-card">
+                    <div class="front">
+                        <h4>estilógrafos recargables</h4>
+                        <img class="items" src="micropunta.jpg" width="250" height="210" alt="">
+                        <p>set de 9 estilógrafos recargables</p>
+                    </div>
+                    <div class="back">
+                        <h4>estilógrafos recargables</h4>
+                        <a class="boton1" href="micro.html">ver mas info.</a>
+                        <a class="boton2 add-to-cart" onclick="addToCart('estilógrafos recargables', 10)" href="#">añadir al carrito</a>
+                    </div>
+                </div>
+        </label>
+    
+        <label>
+            <input type="checkbox">
+                <div class="flip-card">
+                    <div class="front">
+                        <h4>marcadores copic</h4>
+                        <img class="items" src="markers.jpg" width="250" height="210" alt="">
+                        <p>72 marcadores a base de alchol</p>
+                    </div>
+                    <div class="back">
+                        <a class="boton1" href="copic.html">ver mas info.</a>
+                        <a class="boton2 add-to-cart" onclick="addToCart('marcadores a base de alchol', 10)" href="#">añadir al carrito</a>
+                    </div>
+                </div>
+        </label>
+    
+        <label>
+            <input type="checkbox">
+                <div class="flip-card">
+                    <div class="front">
+                        <h4>plumilla</h4>
+                        <img class="items" src="plumilla.webp" width="250" height="210" alt="">
+                        <p>plumilla con juego de 3 puntas</p>
+                    </div>
+                    <div class="back">
+                        <a class="boton1" href="plumilla.html">ver mas info.</a>
+                        <a class="boton2 add-to-cart" onclick="addToCart('plumilla', 10)" href="#">añadir al carrito</a>
+                    </div>
+                </div>
+        </label>
+    
+        <label>
+            <input type="checkbox">
+                <div class="flip-card">
+                    <div class="front">
+                        <h4>marcadores promarker</h4>
+                        <img class="items" src="promarker.jpg" width="250" height="210" alt="">
+                        <p>12 tonos basicos de marcadores acuareleables</p>
+                    </div>
+                    <div class="back">
+                        <a class="boton1" href="promarkers.html">ver mas info.</a>
+                        <a class="boton2 add-to-cart" onclick="addToCart('marcadores promarker', 10)" href="#">añadir al carrito</a>
+                    </div>
+                </div>
+        </label>
+    
+        <label>
+            <input type="checkbox">
+                <div class="flip-card">
+                    <div class="front">
+                        <h4>marcador negro punta de pincel</h4>
+                        <img class="items" src="tinta2.webp" width="250" height="210" alt="">
+                        <p>marcador negro punta de pincel</p>
+                    </div>
+                    <div class="back">
+                        <a class="boton1" href="markerink.html">ver mas info.</a>
+                        <a class="boton2 add-to-cart" onclick="addToCart('marcador negro punta de pincel', 10)" href="#">añadir al carrito</a>
+                    </div>
+                </div>
+        </label>
+    
+        <label>
+            <input type="checkbox">
+                <div class="flip-card">
+                    <div class="front">
+                        <h4>colores caran d'ache</h4>
+                        <img class="items" src="colores.webp" width="250" height="210" alt="">
+                        <p>juego de 20 colores profesionales caran d'ache</p>
+                    </div>
+                    <div class="back">
+                        <a class="boton1" href="carancolor.html">ver mas info.</a>
+                        <a class="boton2 add-to-cart" onclick="addToCart('juego 20 colores profesionales', 10)" href="#">añadir al carrito</a>
+                    </div>
+                </div>
+        </label>
+    
+        <label>
+            <input type="checkbox">
+                <div class="flip-card">
+                    <div class="front">
+                        <h4>colores norma premium</h4>
+                        <img class="items" src="norma.jpg" width="250" height="210" alt="">
+                        <p>lapicero de gel blanco</p>
+                    </div>
+                    <div class="back">
+                        <a class="boton1" href="normapremiun.html">ver mas info.</a>
+                        <a class="boton2 add-to-cart" onclick="addToCart('colores norma premium', 10)" href="#">añadir al carrito</a>
+                    </div>
+                </div>
+        </label>
+    
+        <label>
+            <input type="checkbox">
+                <div class="flip-card">
+                    <div class="front">
+                        <h4>colores prismacolor premier</h4>
+                        <img class="items" src="prismacolor.jpg" width="250" height="210" alt="">
+                        <p>lapicero de gel blanco</p>
+                    </div>
+                    <div class="back">
+                        <a class="boton1" href="prisma.html">ver mas info.</a>
+                        <a class="boton2 add-to-cart" onclick="addToCart('colores prismacolor premier', 10)" href="#">añadir al carrito</a>
+                    </div>
+                </div>
+        </label>
+    
+        <label>
+            <input type="checkbox">
+                <div class="flip-card">
+                    <div class="front">
+                        <h4>marcadores posca</h4>
+                        <img class="items" src="posca.jpg" width="250" height="210" alt="">
+                        <p>lapicero de gel blanco</p>
+                    </div>
+                    <div class="back">
+                        <a class="boton1" href="posca.html">ver mas info.</a>
+                        <a class="boton2 add-to-cart" onclick="addToCart('marcadores posca', 10)" href="#">añadir al carrito</a>
+                    </div>
+                </div>
+        </label>
+    </div>
+    
+
+    <div class="next">
+            <a class="izquierda" href="#"><i class='bx bx-chevron-left'></i></a>
+            <a class="derecha" href="nextone.html"><i class='bx bx-chevron-right'></i></a>
+    </div>
+    <script src="cart.js"></script>
+    
+</body>
+</html>
